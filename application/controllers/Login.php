@@ -22,4 +22,9 @@ class Login extends CI_Controller {
 		$this->login_model->validasi($user,$pass);
 	}
 
+	Public function logout(){
+        session_destroy();
+        redirect(base_url());
+    }
+
 }
