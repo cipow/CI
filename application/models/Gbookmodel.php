@@ -16,7 +16,8 @@ class Gbookmodel extends CI_Model {
 				'nama'	=> $this->input->post('nama'),
 				'email'	=> $this->input->post('email'),
 				'hp'	=> $this->input->post('hp'),
-				'pesan'	=> $this->input->post('pesan')
+				'pesan'	=> $this->input->post('pesan'),
+				'sempak'	=> $this->input->post('sempak')
 			);
 		
 		return $this->db->insert('gbook', $data);
